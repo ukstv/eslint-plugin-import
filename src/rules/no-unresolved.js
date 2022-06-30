@@ -40,8 +40,8 @@ module.exports = {
       let resolvedPath = resolve(source.value, context);
       if (useTS) {
         resolvedPath = resolvedPath ||
-          resolve(source.value.replace(/\.jsx?$/, '.ts'), context) ||
-          resolve(source.value.replace(/\.jsx?$/, '.tsx'), context);
+          resolve(source.value.replace(/\.js$/, '.ts'), context) ||
+          resolve(source.value.replace(/\.jsx$/, '.tsx'), context);
       }
 
 
